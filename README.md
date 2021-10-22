@@ -1,6 +1,6 @@
 # JS-Calendar-App
 > A simple calendar app made in HTML CSS and JS.
->> [Live Demo Here!]()\
+>> [Live Demo Here!](https://thathoracy-js-calendar-app.netlify.app)\
 >> README in Polish [here](./README.pl.md).
 
 ## Table of Contents

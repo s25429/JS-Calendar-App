@@ -1,6 +1,6 @@
 # JS-Calendar-App
 > Prosta kalendarzowa aplikacja internetowa zrobiona w HTML i JS.
->> [Live Demo Tutaj!]()\
+>> [Live Demo Tutaj!](https://thathoracy-js-calendar-app.netlify.app)\
 >> README w języku angielsku [tutaj](README.md).
 
 ## Spis Treści
