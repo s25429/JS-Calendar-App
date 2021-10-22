@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calendar App using vanilla JS">
+  <meta name="author" content="Cezary Ciślak">
+  <title>Calendar</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Local Files -->
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+
+  <!-- 
+    Concept based heavily from Alex Cramer's calendar from 2017, picture under this link: https://freefrontend.com/assets/img/css-calendars/calendar-6.png  Codepen link: https://codepen.io/IAmAlexJohnson/pen/ybgwQG
+  -->
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="left">
+      <div class="date">
+        <h1 class="day">Day</h1>
+        <h2 class="weekday">Weekday</h2>
+        <p class="date-full">Date full</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="years">
+        <i class="fas fa-angle-left prev-year"></i>
+        <h2 class="year">Year</h2>
+        <i class="fas fa-angle-right next-year"></i>
+      </div>
+      <div class="months">
+        Months
+      </div>
+      <div class="weekdays">
+        Weekdays
+      </div>
+      <div class="days">
+        Days
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

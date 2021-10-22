@@ -1,0 +1,266 @@
+/** General styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --clr-dark: hsl(0, 0%, 17%);
+  --clr-light: hsl(0, 0%, 80%);
+  --clr-main: hsl(240, 55%, 45%);
+}
+
+body {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+
+/** Main boxes styling */
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: 30rem auto;
+
+  border-radius: 2rem;
+  box-shadow: .3em .3em .6em rgba(0, 0, 0, .5);
+}
+
+.calendar-container .left, 
+.calendar-container .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-container .left {
+  padding: .3em 2.8em 2em 2.8em;
+
+  color: currentColor;
+  background-color: var(--clr-main);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.calendar-container .right {
+  padding: 1.2em 2.8em 2em 2.8em;
+
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-container h1 {
+  font-size: 12rem;
+  height: 1em;
+  margin-bottom: .1em;
+}
+
+.calendar-container h2 {
+  font-size: 3.8rem;
+  margin-bottom: .2em;
+}
+
+.calendar-container p {
+  font-size: 1.6rem;
+  margin-bottom: 1.5em;
+}
+
+
+/** Today date */
+
+.calendar-container .left .date {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+/** Years */
+
+.calendar-container .right .years {
+  margin-left: auto;
+  margin-bottom: 1.2em;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: .5em;
+
+  opacity: .2;
+}
+
+.calendar-container .right .years i.fas {
+  width: 1.4em;
+  height: 1.5em;
+
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+  border-radius: 50%;
+  border: .1em solid transparent;
+
+  transform: translateY(-.15em);
+  transition: border-color .1s linear;
+}
+
+.calendar-container .right .years i.fas.fa-angle-left {
+  padding-right: .1em;
+}
+
+.calendar-container .right .years i.fas.fa-angle-right {
+  padding-left: .1em;
+}
+
+.calendar-container .right .years i.fas:hover {
+  border-color: var(--clr-main);
+}
+
+.calendar-container .right .years i.fas::after {
+  content: '';
+  position: absolute;
+
+  left: -.1em;    /* Fixed values, */
+  right: -.1em;   /* but those will */
+  width: 1.4em;   /* always be known, so */
+  height: 1.5em;  /* no biggie, it works */
+
+  border-radius: 50%;
+  box-shadow: .1em .1em .3em rgba(0, 0, 0, .5);
+
+  opacity: 0;
+  transition: opacity .1s linear;
+}
+
+.calendar-container .right .years i.fas:hover::after {
+  opacity: 1;
+}
+
+
+/** Months */
+
+.calendar-container .right .months {
+  width: 100%;
+  padding: 0 1em;
+  padding-bottom: .3em;
+  margin-bottom: .5em;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  font-size: 2rem;
+  letter-spacing: .02em;
+  opacity: 1;
+  cursor: pointer;
+  border-bottom: .1em solid var(--clr-dark);
+}
+
+.calendar-container .right .months div {
+  position: relative;
+  padding: .01em .4em .1em .4em;
+
+  font-size: 1.8rem;
+  color:hsla(0, 0%, 17%, .5);
+  border-radius: .3em;
+  border: .1em solid transparent;
+  border-top: none;
+  border-bottom: none;
+
+  transition: all .1s linear;
+  transition-property: color, background-color, border-color;
+}
+
+.calendar-container .right .months div.sel {
+  color: var(--clr-light);
+  background-color: var(--clr-main);
+
+  box-shadow: .1em .1em .3em rgba(0, 0, 0, .5);
+}
+
+.calendar-container .right .months div:hover {
+  border-color: var(--clr-main);
+}
+
+
+/** Weekdays */
+
+.calendar-container .right .weekdays {
+  width: 100%;
+  margin-bottom: 1em;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+
+  font-size: 2.4rem;
+  opacity: .7;
+}
+
+
+/** Days */
+
+.calendar-container .right .days {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+}
+
+.calendar-container .right .days div {
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  width: 2.5em;
+  height: 2.5em;
+  margin: .05em .2em;
+
+  font-size: 2.2rem;
+  border: .1em solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: border-color .1s linear;
+}
+
+.calendar-container .right .days div.today {
+  background-color: var(--clr-main);
+  color: var(--clr-light);
+
+  box-shadow: .1em .1em .3em rgba(0, 0, 0, .5);
+}
+
+.calendar-container .right .days div.prev-day, 
+.calendar-container .right .days div.next-day {
+  opacity: .3;
+}
+
+.calendar-container .right .days div:hover {
+  border-color: var(--clr-main);
+}
+
+.calendar-container .right .days div.today:hover {
+  border-color: var(--clr-main);
+}
