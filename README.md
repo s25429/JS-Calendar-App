@@ -9,7 +9,6 @@
 * [Screenshots](#screenshots)
 * [Launching and Viewing](#launching-and-viewing)
 * [Project Status](#project-status)
-* [Contact](#contact)
 
 ## General Information
 It is a simple calendar web app and there is not much more to it. Idea was to create something functional using dates and so on. It is not really optimized for various resolutions, because that was not the goal. Best is to view it on a desktop.\ 
@@ -31,8 +30,3 @@ I was heavily inspired by a calendar app made by Alex Cramer [here](https://free
 
 ## Project Status
 Project is fully complete. It works rather well and I have not found any bugs in it as of yet.
-
-## Contact
-Created by s25429 AKA [ThatHoracy](https://github.com/ThatHoracy), but currently posted on an account using school email (this one!)
-- Email: cezary.cislak@gmail.com
-- LinkedIn: [profile page](https://www.linkedin.com/in/cezary-ci%C5%9Blak-913559237/)
