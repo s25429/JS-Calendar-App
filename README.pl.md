@@ -9,7 +9,6 @@
 * [Zrzuty Ekranu](#zrzuty-ekranu)
 * [Uruchamianie i Wgląd](#uruchamianie-i-wgląd)
 * [Status Projektu](#status-projektu)
-* [Kontact](#kontakt)
 
 ## Ogólne Informacje
 To jest zwykła prosta kalendarzowa aplikacja internetowa. Zamysł był taki, aby stworzyć coś funkcjonalnego używając dat. Projekt nie jest zoptymalizowany pod rózne rozmiary ekranów, gdyż nie taki był cel. Najlepiej działa na monitorze komputerowym.\ 
@@ -31,8 +30,3 @@ Byłem bardzo zainspirowany aplikacją kalendarzową stworzoną przez Alex'a Cra
 
 ## Status Projektu
 Projekt jest w pełni skończony. Działa całkiem dobrze i nie znalazłem jeszcze żadnych błędów.
-
-## Kontakt
-Stworzone przez s25429 AKA [ThatHoracy](https://github.com/ThatHoracy), na ten moment opublikowane na koncie z mailem uczelnianym (ten obecny!)
-- Email: cezary.cislak@gmail.com
-- LinkedIn: [strona profilu](https://www.linkedin.com/in/cezary-ci%C5%9Blak-913559237/)
